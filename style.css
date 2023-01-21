@@ -5,5 +5,143 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.main-content{
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 300px 700px ;
+    width: 90%;
+    margin: 20px auto;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: #242531;   
+    margin-left: 5%;
 
-/* Write CSS code below */
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: white;
+}
+.left-content{
+    padding: 1rem;
+}
+
+.profile-image{
+    width: 60%;
+    height: 150px;
+    border-radius: 30%;
+    border: 5px solid white;
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+.name{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    color: skyblue;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    color:white;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;;
+    flex-direction:row;
+    justify-content: center;
+    padding-left: 20px;
+}
+.social-media .icon{
+    flex: 1;
+    font-size: 1.3rem;
+}
+.personal-details .icon{
+    color: white;
+    font-size: 0.75rem;
+    text-align: start;
+    padding: 0.75rem;
+}
+
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+}
+.skill-item{
+    width:100%;
+    padding: 0.75rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+.skill-proress{
+    width: 100%;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background: white;
+    border-radius: 10px;
+}
+.right-section {
+    grid-column: span 1 / span 2;
+    background-color: white;
+}
+.right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem ;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    color:rgb(46, 45, 45);
+}
+.para{
+    font-size: 1rem;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    color: rgba(45, 44, 44, 0.848);
+}
+.education-content{
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    color:rgb(81, 78, 78);
+}
+.project-content{
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    color:rgb(81, 78, 78);   
+}
+
+@media screen and (max-width:673px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+        min-height: 1000px;
+        min-width: 90%;
+    }
+}
