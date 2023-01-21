@@ -126,6 +126,7 @@
     padding: 0.5rem;
     letter-spacing: 1px;
     color: rgba(45, 44, 44, 0.848);
+    text-align: justify;
 }
 .education-content{
     padding: 0.5rem;
